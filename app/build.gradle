@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.example.diana.vrec"
+        minSdkVersion 22
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'com.android.support:gridlayout-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.googlecode.mp4parser:isoparser:1.0.5.4'
+    compile 'com.yalantis:eqwaves:1.0.1'
+    //wave
+    //compile 'org.firezenk:audiowaves:1.1'
+    //compile 'com.github.FireZenk:AudioWaves:f074339fe5@aar'
+    //compile 'com.maxproj.simplewaveform:app:1.0.0'
+    compile 'com.github.CarGuo:RecordWave:v1.0.9'
+    testCompile 'junit:junit:4.12'
+}

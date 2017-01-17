@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="channels_list">
+        <item name ="default">Mono</item>
+        <item>Stereo</item>
+    </string-array>
+    <string-array name="channels_list_results">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="output_list">
+        <item name = "default">DEFAULT </item>
+        <item>3GPP (.3gp) </item>
+        <item>MPEG-4 (.mp4)</item>
+    </string-array>
+    <string-array name="output_list_results">
+        <item>11</item>
+        <item>22</item>
+        <item>33</item>
+
+    </string-array>
+ </resources>

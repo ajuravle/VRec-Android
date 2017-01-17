@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton3"
+        android:background="@drawable/button_del_shape"
+        android:src="@drawable/stopphot"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignEnd="@+id/seekBar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/button_del_shape"
+        android:src="@drawable/rrpausehot"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignStart="@+id/seekBar" />
+
+    <TextView
+        android:text="06:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekBar"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textView"
+        android:textColor="?android:attr/colorPrimary"
+        android:layout_marginStart="140dp" />
+
+    <TextView
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:id="@+id/textView2"
+        android:layout_marginEnd="140dp"
+        android:textColor="@color/colorPrimary" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:background="@drawable/button_rec_shape"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:src="@drawable/button_recording"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:id="@+id/seekBar"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:thumb="@drawable/control"
+        android:background="@drawable/progres"
+        style="@android:style/Widget.Material.SeekBar"
+        android:layout_above="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/gl_surface"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

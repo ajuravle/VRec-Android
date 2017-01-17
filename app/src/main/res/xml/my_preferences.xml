@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="cbox"
+        android:title="Auto save"
+        android:background="@drawable/check_box" />
+
+
+    <ListPreference
+        android:key="list_channels"
+        android:title="Audio Channels"
+        android:entries="@array/channels_list"
+        android:entryValues="@array/channels_list_results"
+        android:dialogTitle="Please select one!"
+        android:defaultValue="@string/channel_default"
+        />
+
+    <ListPreference
+        android:key="list_output"
+        android:title="Output Format"
+        android:entries="@array/output_list"
+        android:entryValues="@array/output_list_results"
+        android:dialogTitle="Please select one!" />
+
+</PreferenceScreen>

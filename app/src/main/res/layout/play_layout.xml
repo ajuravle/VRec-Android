@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@drawable/play_lay_shape"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/seekBar2"
+            android:id="@+id/begin"
+            android:layout_marginLeft="7dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:thumb="@drawable/control_seek2"
+            style="?attr/seekBarStyle"
+            android:background="@drawable/progress_seek2"
+            android:layout_above="@+id/begin"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play"
+            android:layout_above="@+id/seekBar2"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/play_shape_button_seek2"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/end"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/seekBar2"
+            android:layout_marginEnd="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/c1x"
+            android:id="@+id/close"
+            android:layout_above="@+id/seekBar2"
+            android:layout_marginBottom="11dp"
+            android:layout_alignEnd="@+id/end"
+            android:background="@android:color/transparent" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="38dp"
+            android:layout_above="@+id/seekBar2"
+            android:layout_alignStart="@id/play">
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titlu"
+                android:maxLines="1"
+                android:overScrollMode="ifContentScrolls"
+                android:ellipsize="marquee"
+                android:gravity="center_horizontal" />
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
